@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Nombrar_contratos_y_modificaciones.MainPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label Text="NOMBRAR CONTRATOS Y MODIFICACIONES" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="Center"></Label>
+        <Button Text="Contrato" Grid.Row="1" Grid.Column="0" HorizontalOptions="End" Margin="25" FontSize="Small" HeightRequest="10" Clicked="CargarContratos"></Button>
+        <Button Text="Modificación" Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" Margin="7" FontSize="Small" HeightRequest="10" Clicked="CargarModificaciones"></Button>
+        <Button Text="Nombrar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalOptions="Center" HeightRequest="10" FontSize="Small" ></Button>
+                
+    </Grid>
+
+</ContentPage>
